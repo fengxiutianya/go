@@ -19,7 +19,7 @@ func Run(searchTerm string){
 	results :=make(chan *Result)
 
 	//构造一个waitGroup，以便处理所有的数据源
-	var waitGroup sync.waitGroup
+	var waitGroup sync.WaitGroup
 
 	//设置需要等待处理
 	//每个数据源的goroutine 的数量

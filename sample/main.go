@@ -3,8 +3,8 @@ import (
 	"log"
 	"os"
 
-	_ "sample/matchers"
-	"sample/search"
+	_ "./matchers"
+	"./search"
 )
 //init 在main之前调用
 func init(){
