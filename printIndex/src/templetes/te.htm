@@ -1,0 +1,4 @@
+{{ define "tem" }}
+## {{.Header}}
+{{range $key,$value := .Path}}{{$key}}{{"."}} [{{$value}}]({{$value}}){{"\n"}}{{end}}
+{{end}}
